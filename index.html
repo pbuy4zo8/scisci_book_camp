@@ -1,1 +1,166 @@
-test html
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciSci Book Camp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2b6cb0',
+                        primaryLight: '#bee3f3',
+                        accent: '#e9d8fd',
+                        muted: '#4a5568',
+                        text: '#2d3748',
+                        bg: '#f7fafc',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-bg to-white min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="relative overflow-hidden bg-gradient-to-br from-blue-100 via-sky-50 to-purple-200 text-center py-20 px-6">
+        <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #2b6cb0 1px, transparent 0); background-size: 32px 32px;"></div>
+        <div class="relative">
+            <p class="text-sm uppercase tracking-[0.3em] text-muted mb-3">Science of Science Book Camp</p>
+            <h1 class="text-5xl font-bold tracking-wide text-primary drop-shadow-sm">SciSci Book Camp</h1>
+            <div class="flex items-center justify-center gap-3 mt-5">
+                <span class="h-px w-10 bg-primary/30"></span>
+                <p class="text-base text-muted/80">一緒に読み、研究支援に活かす</p>
+                <span class="h-px w-10 bg-primary/30"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto w-full px-6 py-14 flex-1">
+
+        <!-- Background & Purpose -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold">1</span>
+                <h2 class="text-xl font-semibold text-primary">背景・目的</h2>
+            </div>
+            <div class="pl-11">
+                <p class="leading-relaxed text-muted">
+                    論文データや引用ネットワークなどを使い「科学そのもの」を定量的に捉える動き（Science of Science / メタサイエンス）が広がっています。
+                    私たちはこれらの知見を<strong class="text-text font-medium">研究支援（URA）や研究マネジメントの実務に活かす</strong>ことを目指し、
+                    継続的に学び・交流するコミュニティをゆるやかに育てています。
+                </p>
+            </div>
+        </section>
+
+        <!-- Goal -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold">2</span>
+                <h2 class="text-xl font-semibold text-primary">狙い</h2>
+            </div>
+            <div class="pl-11">
+                <p class="leading-relaxed text-muted">
+                    サイエンス・オブ・サイエンスの本を買ったは良いが、全然読み進められていない。業務でも使っていきたいけど一人では大変。
+                    そんな方に参加してほしいと思います。
+                </p>
+            </div>
+        </section>
+
+        <!-- Book -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold">3</span>
+                <h2 class="text-xl font-semibold text-primary">使用する書籍</h2>
+            </div>
+            <div class="pl-11">
+                <div class="rounded-xl bg-gradient-to-br from-blue-50 to-purple-50 border border-primaryLight/40 p-6">
+                    <h3 class="font-semibold text-primary text-lg mb-1">サイエンス・オブ・サイエンス</h3>
+                    <p class="text-sm text-muted mb-4">Dashun Wang・A-L. Barabási 著 ／ 森北出版</p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.morikita.co.jp/books/mid/097541" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary bg-white border border-primaryLight rounded-full px-4 py-1.5 shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                            森北出版
+                        </a>
+                        <a href="https://www.dashunwang.com/book/the-science-of-science" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-sm font-medium text-primary bg-white border border-primaryLight rounded-full px-4 py-1.5 shadow-sm hover:shadow-md hover:border-primary/40 transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                            English Edition
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-6">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold">4</span>
+                <h2 class="text-xl font-semibold text-primary">活動</h2>
+            </div>
+
+            <div class="flex flex-col gap-5 pl-11">
+                <!-- 第1回 -->
+                <div class="group relative border border-primaryLight/60 rounded-xl bg-white shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 overflow-hidden">
+                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="p-5">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <span class="inline-block text-xs font-medium text-primary/70 bg-blue-50 px-2.5 py-0.5 rounded-full mb-1">2026年7月～</span>
+                                <h3 class="font-semibold text-primary text-lg">SciSci 輪読会 — 第1回</h3>
+                            </div>
+                            <span class="text-sm font-semibold text-primary bg-blue-50/80 px-3 py-1 rounded-full w-fit sm:w-auto text-center whitespace-nowrap">
+                                2026/07/22（水） 12:15–12:45
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第2回 -->
+                <div class="group relative border border-primaryLight/60 rounded-xl bg-white shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 overflow-hidden">
+                    <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="p-5">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <div>
+                                <span class="inline-block text-xs font-medium text-primary/70 bg-blue-50 px-2.5 py-0.5 rounded-full mb-1">第2回</span>
+                                <h3 class="font-semibold text-primary text-lg">SciSci 輪読会 — 第2回</h3>
+                            </div>
+                            <span class="text-sm font-semibold text-primary bg-blue-50/80 px-3 py-1 rounded-full w-fit sm:w-auto text-center whitespace-nowrap">
+                                2026/08/05（水） 12:15–12:45
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-sm font-bold">4</span>
+                <h2 class="text-xl font-semibold text-primary">お問合わせ</h2>
+            </div>
+            <div class="pl-11">
+                <div class="inline-flex items-center gap-3 bg-white border border-primaryLight/50 rounded-full px-5 py-2.5 shadow-sm">
+                    <svg class="w-4 h-4 text-primary/60 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span class="text-sm text-muted">小林</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 border-t border-gray-200/60">
+        <p class="text-sm text-gray-400 tracking-wide">SciSci Book Camp — Science of Science Book Camp</p>
+    </footer>
+
+</body>
+</html>
